@@ -1,18 +1,10 @@
 html, body {
-    height: 100%;
     background-color: teal;
+    margin: 1%;
 }
 
 p {
-    width: 30%;
-    float: left;
-}
-
-img {
-    float: left;
-    height: 70%;
-    width: auto;
-    padding: 2px;
+    background-color: seashell;
 }
 
 .orangeStyle {
@@ -21,57 +13,6 @@ img {
     background-color: orange;
 }
 
-#navigationBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#textPart {
-    background-color: seashell;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    
-} 
-
 #nickiImage {
-    position: relative;
-    bottom: -11%;
-    right: -6%;
-    /*display: flex;
-    flex-flow: row;
-    justify-content: flex-end;*/
+    width: 100%;
 }
-
-@media screen and (max-width: 800px)
-{
-    p {
-        background-color: seashell;
-        width: 100%;
-    }
-
-    #navigationBar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    #textPart {
-        position: relative;
-        margin-top: 3%;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        height: min-content;
-    }
-
-    #nickiImage {
-        position: absolute;
-        top: 103%;
-        left: 0%;
-        width: 99.7%;
-        height: auto; 
-    }
-}
-

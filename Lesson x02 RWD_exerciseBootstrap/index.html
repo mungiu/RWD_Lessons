@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Exercise, Bootstrap</title>
     <meta charset="utf-8">
-    
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <h1>Exercise, Bootstrap</h1>
-    <p>Try out the Bootstrap Grid Layout features. First download and include the necessary files to enable Bootstrap features in this webpage project. When you do it correctly, you can see an effect on the fields below.</p>
+    <p>Try out the Bootstrap Grid Layout features. First download and include the necessary files to enable Bootstrap features
+        in this webpage project. When you do it correctly, you can see an effect on the fields below.</p>
     <div class="container">
         <div class="row">
-            <div class="col-md">Field 1</div>
+            <div class="col-md order-lg-last">Field 1</div>
             <div class="col-md">Field 2</div>
         </div>
         <div class="row">
@@ -22,12 +29,19 @@
         </div>
         <div class="row">
             <div class="col-sm-2">Field 6</div>
-            <div class="col-sm-2">Field 7</div>
-            <div class="col-sm-2">Field 8</div>
+            <div class="col-sm-2 offset-sm-2">Field 7</div>
+            <div class="col-sm-2 offset-sm-2">Field 8</div>
+        </div>
+        <div class="row">
+            <div class="col-md-9, col-lg-5">Field 9</div>
+            <div class="col-md-3, col-lg-7">Field 10</div>
         </div>
     </div>
     <ol>
-        <li>Create a Grid Layout row with two fields. One field should take up 9 columns when the browser window is bigger than 768 pixels and 5 columns when the window is bigger than 992 pixels. The other field should be sized to accommodate that.</li>
+        <li>Create a Grid Layout row with two fields. One field should take up 9 columns when the browser window is bigger than
+            768 pixels and 5 columns when the window is bigger than 992 pixels. The other field should be sized to accommodate
+            that.
+        </li>
         <li>There should be space between fields 6, 7 and 8.</li>
         <li>On a browser window size greater than 992 pixels, field 1 and 2 should swap positions.
         </li>
@@ -35,4 +49,5 @@
     </ol>
     <img src="images/big.png" alt="A large webpage">
 </body>
+
 </html>
