@@ -30,15 +30,15 @@ img {
 #textPart {
     background-color: seashell;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-around;
     
 } 
 
 #nickiImage {
     position: relative;
-    bottom: -13.1%;
-    right: -12.7%;
+    bottom: -11%;
+    right: -6%;
     /*display: flex;
     flex-flow: row;
     justify-content: flex-end;*/
@@ -59,7 +59,7 @@ img {
 
     #textPart {
         position: relative;
-        margin-top: 14px;
+        margin-top: 3%;
         background-color: transparent;
         display: flex;
         flex-direction: column;
@@ -68,11 +68,10 @@ img {
 
     #nickiImage {
         position: absolute;
-        clear: both;
         top: 103%;
         left: 0%;
         width: 99.7%;
-        min-height: 150%;
+        height: auto; 
     }
 }
 
