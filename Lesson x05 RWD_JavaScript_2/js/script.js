@@ -10,8 +10,8 @@ listItemArray[5].innerHTML = listItemArray[5].innerHTML + " " + even_or_odd_Numb
 
 var counter1 = document.getElementById("counter1Id");
 var counter2 = document.getElementById("counter2Id");
-counter1.innerHTML = counter1.innerHTML + " " + timedIncrement(0, 100, 1000);
-counter2.innerHTML = counter2.innerHTML + " " + timedIncrement(0, 200, 2000);
+counter1.innerHTML = counter1.innerHTML + " " + timedIncrement(0, 100, 1000, "counter1Id");
+counter2.innerHTML = counter2.innerHTML + " " + timedIncrement(0, 200, 2000, "counter1Id");
 
 //Write your function declarations below this line
 function add_two_numbers(n1, n2) {
@@ -28,20 +28,20 @@ function calculate_area_circle(radius) {
 
 function random_color() {
     var tempArr = ["red", "blue", "green", "black", "white"];
-    var randomNumber = Math.round(Math.floor(Math.random() * 4));
+    var randomNumber = Math.floor(Math.random() * 5); // rounds down
     return tempArr[randomNumber];
 }
 
 function current_date() {
-    return new Date();
+    return new Date(); // check smaller how spice pow pow
 }
 
 function days_since() {
-    return Math.round(Math.abs(new Date() - new Date(2015, 0, 1)) / (1000 * 60 * 60 * 24));
+    return Math.round((new Date() - new Date(2015, 0, 1)) / (1000 * 60 * 60 * 24));
 }
 
 function even_or_odd_Number(days_since) {
-    var daysSince = Math.round(Math.abs(new Date() - new Date(2015, 0, 1)) / (1000 * 60 * 60 * 24));
+    var daysSince = (Math.round(new Date() - new Date(2015, 0, 1)) / (1000 * 60 * 60 * 24));
     if ((daysSince % 2) == 0)
         return "number is even"
     else
@@ -49,14 +49,15 @@ function even_or_odd_Number(days_since) {
 }
 
 //NOT FINISHED VALUE NOT DISPLAYED/ OR NOT INCREASING
-function timedIncrement(value, incrementAmount, timeInterval) {
+function timedIncrement(value, incrementAmount, timeInterval, id) {
     var myIntervalRef = setInterval(function () {
         if (value < 1000) {
             value += incrementAmount;
+            document.getElementById(id).innerHTML = "Counter " + value + " : " + value;
         }
         else {
             clearInterval(myIntervalRef)
         }
     }, timeInterval);
-    return myIntervalRef;    
+    return myIntervalRef;
 }
