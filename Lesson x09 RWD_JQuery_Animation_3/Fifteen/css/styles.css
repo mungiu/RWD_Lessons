@@ -1,0 +1,82 @@
+#outerFrame {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#outerFrame div {
+    background-image: url("../images/Nicki-500.jpg");
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#box1 {
+    left: 0px;
+    top: 0px;
+}
+#box2 {
+    left: 125px;
+    top: 0px;
+}
+#box3 {
+    left: 250px;
+    top: 0px;
+}
+#box4 {
+    left: 375px;
+    top: 0px;
+}
+#box5 {
+    left: 0px;
+    top: 125px;
+}
+#box6 {
+    left: 125px;
+    top: 125px;
+}
+#box7 {
+    left: 250px;
+    top: 125px;
+}
+#box8 {
+    left: 375px;
+    top: 125px;
+}
+#box9 {
+    left: 0px;
+    top: 250px;
+}
+#box10 {
+    left: 125px;
+    top: 250px;
+}
+#box11 {
+    left: 250px;
+    top: 250px;
+}
+#box12 {
+    left: 375px;
+    top: 250px;
+}
+#box13 {
+    left: 0px;
+    top: 375px;
+}
+#box14 {
+    left: 125px;
+    top: 375px;
+}
+#box15 {
+    left: 250px;
+    top: 375px;
+}
+/*box16 is the empty box with no image*/
+#box16 {
+    left: 375px;
+    top: 375px;
+    background-image: none !important;
+    background-color: white;
+}
