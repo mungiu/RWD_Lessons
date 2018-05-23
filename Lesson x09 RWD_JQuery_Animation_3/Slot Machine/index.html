@@ -1,25 +1,32 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Slot Machine</title>
-        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
-    </head>
-    <body>
-        <h1>Slot Machine</h1>
-        <div>
-            <img id="roller1" src="images/eight.png">
-            <button id="rollButton">Roll!</button>
-        </div>
-        <p>Missing functionality:</p>
-        <ul>
-            <li>Add two additonal rollers, which also roll when you press the button.</li>
-            <li>Add a "credits" box, and only allow the rollers to roll when credit is available.</li>
-            <li>Implement the possibility to win credits given certain image combinations on the rollers (like three of kind).</li>
-            <li>Implement the functionality to hold a roller during a roll.</li>
-        </ul>
-        
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Slot Machine</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Slot Machine</h1>
+    <div>
+        <img id="roller1" src="images/eight.png">
+        <img id="roller2" src="images/eight.png">
+        <img id="roller3" src="images/eight.png">
+        <button id="rollButton">Roll!</button>
+        <button id="claimButton">Claim Bonus</button>
+        <p id="credits"></p>
+    </div>
+    <p>Missing functionality:</p>
+    <ul>
+        <li>Add two additonal rollers, which also roll when you press the button.</li>
+        <li>Add a "credits" box, and only allow the rollers to roll when credit is available.</li>
+        <li>Implement the possibility to win credits given certain image combinations on the rollers (like three of kind).</li>
+        <li>Implement the functionality to hold a roller during a roll.</li>
+    </ul>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
