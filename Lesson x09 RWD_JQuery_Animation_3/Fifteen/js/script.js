@@ -24,6 +24,7 @@ $("#outerFrame div").each(function(){
 //------------------------
 // Function declarations
 //------------------------
+
 // Function which checks whether or not the clicked box is bordering the "empty" box (box16), and if that is the case, then switch position with box16.
 function switchBoxes(clickedBoxRef) {
     // Missing implementation
@@ -48,4 +49,9 @@ function shuffle(array) {
     array[randomIndex] = temporaryValue;
   }
   return array;
+}
+
+// Function that makes boxes switch positions
+function switchBoxes(boxRef) {
+  
 }

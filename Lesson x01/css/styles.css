@@ -1,18 +1,7 @@
-html, body {
-    background-color: teal;
-    margin: 1%;
+li {
+  display: inline;
 }
 
-p {
-    background-color: seashell;
-}
-
-.orangeStyle {
-    border: 1px solid black;
-    padding: 2px;
-    background-color: orange;
-}
-
-#nickiImage {
-    width: 100%;
+a:hover {
+  background-color: red; 
 }
